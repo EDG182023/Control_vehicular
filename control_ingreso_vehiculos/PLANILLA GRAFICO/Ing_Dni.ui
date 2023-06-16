@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>258</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Resetear estilos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo de la ventana principal */
+QDialog {
+  background-color:#F4F2F2;
+}
+
+/* Estilo del boton de entrada*/
+QPushButton {
+  background-color: #246EC7;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/*Estilo del boton de salida*/
+#B_salida {
+  background-color: #C73224;
+  color: #ffffff;
+ /* padding: 10px 20px;*/
+  border-radius: 5px;
+}
+
+QPushButton:hover {
+  background-color: #27ae60;
+}
+
+/* Estilo de las etiquetas de texto titulo*/
+QLabel {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Estilo de las etiquetas de texto titulo_dni*/
+#Titulo_Dni {
+  color: #547A78;
+  font-size: 14px;
+}
+/* Estilo de los campos de entrada de texto */
+QLineEdit {
+  padding: 0px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+/* Estilo de las áreas de texto */
+QTextEdit {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+/* Estilo de las barras de desplazamiento */
+QScrollBar:vertical {
+  width: 8px;
+}
+
+QScrollBar:horizontal {
+  height: 8px;
+}
+
+QScrollBar::handle {
+  background-color: #cccccc;
+  border-radius: 4px;
+}
+
+QScrollBar::handle:hover {
+  background-color: #999999;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+  background: none;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+  background: none;
+}
+
+QScrollBar::add-line:vertical {
+  height: 0px;
+}
+
+QScrollBar::sub-line:vertical {
+  height: 0px;
+}
+
+QScrollBar::add-line:horizontal {
+  width: 0px;
+}
+
+QScrollBar::sub-line:horizontal {
+  width: 0px;
+}
+
+</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>130</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Titulo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>INGRESE LOS DATOS SOLICITADOS </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Titulo_Dni">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DNI:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_entrada">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>190</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ENTRADA</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="B_salida">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SALIDA</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

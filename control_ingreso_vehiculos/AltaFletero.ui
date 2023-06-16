@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>444</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Resetear estilos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo de la ventana principal */
+QDialog {
+  background-color:#F4F2F2;
+}
+
+/* Estilo del boton de entrada*/
+QPushButton {
+  background-color: #246EC7;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/*Estilo del boton de salida*/
+#B_salida {
+  background-color: #C73224;
+  color: #ffffff;
+ /* padding: 10px 20px;*/
+  border-radius: 5px;
+}
+
+QPushButton:hover {
+  background-color: #27ae60;
+}
+
+/* Estilo de las etiquetas de texto titulo*/
+QLabel {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Estilo de las etiquetas de texto titulo_dni*/
+#SubTitulo {
+  color: #547A78;
+  font-size: 14px;
+}
+
+#SubTitulo_2 {
+  color: #547A78;
+  font-size: 14px;
+}
+
+#SubTitulo_3 {
+  color: #547A78;
+  font-size: 14px;
+}
+/* Estilo de los campos de entrada de texto */
+QLineEdit {
+  padding: 0px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+/* Estilo de las áreas de texto */
+QTextEdit {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+/* Estilo de las barras de desplazamiento */
+QScrollBar:vertical {
+  width: 8px;
+}
+
+QScrollBar:horizontal {
+  height: 8px;
+}
+
+QScrollBar::handle {
+  background-color: #cccccc;
+  border-radius: 4px;
+}
+
+QScrollBar::handle:hover {
+  background-color: #999999;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+  background: none;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+  background: none;
+}
+
+QScrollBar::add-line:vertical {
+  height: 0px;
+}
+
+QScrollBar::sub-line:vertical {
+  height: 0px;
+}
+
+QScrollBar::add-line:horizontal {
+  width: 0px;
+}
+
+QScrollBar::sub-line:horizontal {
+  width: 0px;
+}
+
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>470</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>INGRESAR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>470</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CANCELAR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>371</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Formulario de ingreso de nuevo fletero </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SubTitulo_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>70</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nombre:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SubTitulo">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apellido:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>190</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>270</y>
+     <width>181</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SubTitulo_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>240</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Foto:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TOMAR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>310</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>REPETIR</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
